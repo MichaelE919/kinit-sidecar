@@ -1,6 +1,6 @@
 FROM centos:centos7
 
-MAINTAINER eseymour@redhat.com
+LABEL maintainer=eseymour@redhat.com
 
 # install kdc and kadmin
 RUN yum install -y krb5-server krb5-workstation && yum clean all
